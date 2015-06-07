@@ -60,9 +60,9 @@
                     </li>
                     <li>
                       <% if I18n.locale.to_s == 'en' %>
-                        <%= link_to 'ಕನ್ನಡ', url_for( :locale => 'kn' ), :class => "#{ 'selected' if I18n.locale.to_s == 'kn' }" %>
+                        <%= link_to 'ಕನ್ನಡ', url_for( :locale => 'kn' ), :class => "#{ 'selected' if I18n.locale.to_s == 'kn' }",'data-no-turbolink' => true %>
                       <% else %>
-                        <%= link_to 'ENGLISH', url_for( :locale => 'en' ), :class => "#{ 'selected' if I18n.locale.to_s == 'en' }" %>
+                        <%= link_to 'ENGLISH', url_for( :locale => 'en' ), :class => "#{ 'selected' if I18n.locale.to_s == 'en' }",'data-no-turbolink' => true %>
                       <% end %>
                     </li>
                     <li>
