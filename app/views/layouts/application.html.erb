@@ -43,7 +43,8 @@
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i>  <span class="light">MANNAGUDDE </span> GATTY FOUNDATION
+
+                    <i class="fa fa-play-circle"></i>  <span class="light"><%= t('mannagudde') %> </span> <%= t('gatty') %> <%= t('foundation') %>
                 </a>
                 <button type="button" class="navbar-custom navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
@@ -51,22 +52,33 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+            <div class="collapse navbar-collapse navbar-main-collapse">
+
+                <ul class="nav navbar-nav pull-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                      <% if I18n.locale.to_s == 'en' %>
+                        <%= link_to 'ಕನ್ನಡ', url_for( :locale => 'kn' ), :class => "#{ 'selected' if I18n.locale.to_s == 'kn' }" %>
+                      <% else %>
+                        <%= link_to 'ENGLISH', url_for( :locale => 'en' ), :class => "#{ 'selected' if I18n.locale.to_s == 'en' }" %>
+                      <% end %>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download">Download</a>
+                        <a class="page-scroll" href="#about"><%= t('about') %></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#download"><%= t('download') %></a>
                     </li>
+                    <li>
+                        <a class="page-scroll" href="#contact"><%= t('contact') %></a>
+                    </li>
+
+
+
                 </ul>
+
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -84,8 +96,8 @@
               </div>
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">INVESTING IN THE FUTURE</h1>
-                        <p class="intro-text">Mannagudde Gatty Foundation is a non-profit organisation,<br>focused on upliftment of meritorious and deserving students.</p>
+                        <h1 class="brand-heading"><%= t('tagline') %></h1>
+                        <p class="intro-text"><%= t('tagline1') %><br><%= t('tagline2') %><br><%= t('tagline3') %></p>
                         <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
@@ -99,9 +111,9 @@
     <section id="about" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>MANNAGUDDE  SHIVARAM  & SUSHEELA  GATTY  FOUNDATION</h2>
-                <p>Founded in profound memory of Late Shri M Shivaram Gatty and Smt Susheela Shivaram Gatty of Mannagudde, Mangalore and is managed by the Trustees who are the members of the Mannagudde Gatty family</p>
-                <p>The Foundation fulfills the philanthropic mission of the Trust by supporting individuals from the Gatty Community committed towards advancement of Education.</p>
+                <h2><%= t('about1') %></h2>
+                <p><%= t('about2') %><br><%= t('about3') %><br><%= t('about4') %></p>
+                <p><%= t('about5') %></p>
               </div>
         </div>
     </section>
@@ -111,16 +123,15 @@
         <div class="download-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Current Initiative</h2>
-                    <p class="text-left">In the First Year Scholarship Programme-2015-16, the Foundation will distribute scholarships aggregating Rs.30,000/- among 25 needy, deserving and meritorious children/students from the Gatty Community in the following three categories as decided by the Trustees.</p>
+                    <h2><%= t('download0') %></h2>
+                    <p class="text-left"><%= t('download1') %></p>
 
-<p class="text-justify">Category 1 : 10 Students pursuing PUC/11th Standard at Rs.1,000/- each.</p>
-<p class="text-left">Category 2 : 10 Students pursuing Bachelors Degree at Rs.1,000/- each.</p>
-<p class="text-left">Category 3 : 5 Students pursuing First Year Professional  Degree in Engineering, Medicine,
-Business  Management (MBA), etc. at Rs.2,000/- each.
-</p>
-                    <p class="text-left">The detailed document of the Scholarship program can be downloaded by clicking the link below.</p>
-                    <%= link_to "Download", "/download/MannaguddaGattyFoundation.docx" , class: "btn btn-default btn-lg text-center" %>
+                    <p class="text-justify"><%= t('download2') %></p>
+                    <p class="text-left"><%= t('download3') %></p>
+                    <p class="text-left"><%= t('download4') %>
+                    </p>
+                    <p class="text-left"><%= t('download5') %></p>
+                    <%= link_to "Download", "/download/MannaguddaGattyFoundation.doc" , class: "btn btn-default btn-lg text-center" %>
                 </div>
             </div>
         </div>
@@ -130,8 +141,16 @@ Business  Management (MBA), etc. at Rs.2,000/- each.
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Mannagudde Gatty Foundation</h2>
-                <p>Feel free to email us to provide some feedback on our scholarship program , give us suggestions for new initiatives, or to just say hello!</p>
+
+                <h2><%= t('founder0') %></h2>
+                <p class="contact"><%= t('founder1') %></p>
+                <p class="contact"><%= t('founder2') %></p>
+                <p class="contact"><%= t('founder3') %></p>
+                <p class="contact"><%= t('founder4') %></p>
+                <p class="contact"><%= t('founder5') %></p>
+                <p class="contact"><%= t('founder6') %></p>
+                <h2><%= t('contact0') %></h2>
+                <p ><%= t('contact1') %></p>
                 <p><a href="mailto:contact@gattyfoundation.org">contact@gattyfoundation.org</a>
                 </p>
                 <ul class="list-inline banner-social-buttons">
@@ -155,16 +174,13 @@ Business  Management (MBA), etc. at Rs.2,000/- each.
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Mannagudde Gatty Foundation 2015</p>
+            <p>Copyright &copy; <%= t('mannagudde') %> <%= t('gatty') %> <%= t('foundation') %></p>
         </div>
     </footer>
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-
-
-
 
 </body>
 

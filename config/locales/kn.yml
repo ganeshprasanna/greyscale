@@ -1,0 +1,53 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+kn:
+  hello: "ನಮಸ್ಕಾರ"
+  mannagudde: "ಮಣ್ಣಗುಡ್ಡೆ"
+  gatty: "ಗಟ್ಟಿ"
+  foundation: "ಫೌಂಡೇಶನ್"
+  contact: "ಸಂಪರ್ಕ"
+  about: "ನಮ್ಮ ಬಗ್ಗೆ"
+  download: "ಡೌನ್ಲೋಡ್"
+  tagline: "ಮುಂದಿನ ಪೀಳಿಗೆಯ ಏಳಿಗೆಗಾಗಿ"
+  tagline1: "ಮಣ್ಣಗುಡ್ಡೆ ಶಿವರಾಮ್ ಮತ್ತು ಸುಶೀಲಾ ಗಟ್ಟಿ ಫೌಂಡೇಶನ್"
+  tagline2: "ಶ್ಲಾಘನೀಯ ಹಾಗೂ ಅರ್ಹ ವಿದ್ಯಾರ್ಥಿಗಳ ಏಳಿಗೆಗಾಗಿ "
+  tagline3: "ಸ್ಥಾಪಿಸಲ್ಪಟ್ಟ ಲಾಭರಹಿತ ಸಂಸ್ಥೆ"
+  about1: "ಮಣ್ಣಗುಡ್ಡೆ ಶಿವರಾಮ್ ಮತ್ತು ಸುಶೀಲಾ ಗಟ್ಟಿ ಫೌಂಡೇಶನ್"
+  about2: "ನಮ್ಮ ಪರಮ ಪೂಜ್ಯರಾದ ಮಂಗಳೂರಿನ ಮಣ್ಣಗುಡ್ಡೆ ಯ  ದಿವಂಗತ ಶ್ರೀ ಶಿವರಾಮ್ ಗಟ್ಟಿ ಮತ್ತು     "
+  about3: "ದಿವಂಗತ ಶ್ರೀಮತಿ ಸುಶೀಲಾ ಗಟ್ಟಿ ಯವರ ಗೌರವಾನ್ವಿತ ನೆನಪಿಗಾಗಿ ಜನಹಿತ ಮನೋಧ್ಯೇಯ ಹೊಂದಿ "
+  about4: "ಗಟ್ಟಿ ಸಮುದಾಯದ ಮಕ್ಕಳ ವಿದ್ಯಾಬ್ಯಾಸ ಪ್ರಗತಿಗಾಗಿ ಈ ಸಂಸ್ಥೆಯನ್ನು ಸ್ಥಾಪಿಸಲಾಗಿದೆ.  "
+  about5: ""
+  download0: "ನಮ್ಮ ಸಂಸ್ಥೆಯ ಪ್ರಥಮ ಹೆಜ್ಜೆ  "
+  download1: "ಈ ವರ್ಷದ (2015-16) ಕಾರ್ಯಕ್ರಮದ ಅಂಗವಾಗಿ 2014-15 ನೇ ವರ್ಷದ ಪರೀಕ್ಷೆಯಲ್ಲಿ ಉತ್ಹೀರ್ಣರಾದ 25 ಅರ್ಹ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಈ  ಕೆಳಗಿನಂತೆ ವಿದ್ಯಾರ್ಥಿವೇತನವನ್ನು  ನೀಡಲಾಗುವುದು :  "
+  download2: "ವಿಭಾಗ 1 : 10 ಮಂದಿ ಪ್ರಥಮ  ಪಿ. ಯು. ಸಿ. /11ನೇ / ಡಿಪ್ಲೊಮಾ  ತರಗತಿ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ  ತಲಾ ರೂ.1000/- "
+  download3: "ವಿಭಾಗ 2 : 10 ಮಂದಿ ಪ್ರಥಮ  ಡಿಗ್ರೀ/ ಪದವಿ ತರಗತಿ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ತಲಾ ರೂ. 1000/-"
+  download4: "ವಿಭಾಗ 3 :  5 ಮಂದಿ ಪ್ರಥಮ ಬಿ. ಇ. / ಎಂ. ಬಿ. ಬಿ. ಎಸ್. / ಎಂ. ಬಿ. ಎ. ವಿಧ್ಯಾರ್ಥಿಗಳಿಗೆ ತಲಾ ರೂ.2000/-.  "
+  download5: "ನಿಬಂಧನೆಗಳು, ಅರ್ಹತೆ, ಅರ್ಜಿನಮೂನೆ ಮತ್ತು ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿರಿ.  "
+  contact0: "ಮಣ್ಣಗುಡ್ಡೆ  ಗಟ್ಟಿ  ಫೌಂಡೇಶನ್ ಸಂಪರ್ಕ"
+  contact1: "ನಮ್ಮ ಈ ಪ್ರಥಮ ಪ್ರಯತ್ನದ ಬಗ್ಗೆ ನಿಮ್ಮ ಅನಿಸಿಕೆಗಳನ್ನು ನಮ್ಮೊಂದಿಗೆ "
+  founder0: "ಸ್ಥಾಪಕ ಟ್ರಸ್ಟಿಗಳು:"
+  founder1: "ಎಂ ಕೆ ಗಿರಿಶ್ ಪ್ರಸನ್ನ"
+  founder2: "ಎಂ ಕೆ ಗಣೇಶಪ್ರಸನ್ನ"
+  founder3: "ಶ್ವೇತಾ ಗಣೇಶ್ ಪ್ರಸನ್ನ"
+  founder4: "ವಾಣಿ ಕೃಷ್ಣಮೋಹನ"
+  founder5: "ಯ್‌ಮ್ ಎಸ್ ಕೃಷ್ಣಮೋಹನ"
+  founder6: "ರಾಜ್ನಿವಾಸ್, ಮಣ್ಣಗುಡ್ಡೆ, ಮಂಗಳೂರು 575003"
