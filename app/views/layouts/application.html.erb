@@ -60,7 +60,7 @@
                     </li>
                     <li>
                       <% if I18n.locale.to_s == 'en' %>
-                        <%= link_to 'ಕನ್ನಡ', url_for( :locale => 'kn' ), :class => "#{ 'selected' if I18n.locale.to_s == 'kn' }" %>
+                        <%= link_to 'ಕನ್ನಡ', url_for( :locale => 'kn', controller: 'application', action:'home' ), :class => "#{ 'selected' if I18n.locale.to_s == 'kn' }" %>
                       <% else %>
                         <%= link_to 'ENGLISH', url_for( :locale => 'en' ), :class => "#{ 'selected' if I18n.locale.to_s == 'en' }" %>
                       <% end %>
