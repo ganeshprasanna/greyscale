@@ -176,14 +176,3 @@ function init() {
         icon: image
     });
 }
-
-// Semicolon (;) to ensure closing of earlier scripting
-// Encapsulation
-// $ is assigned to jQuery
-;(function($) {
-    $(window).load(function(){
-        $('#element_to_pop_up').bPopup({
-            autoClose: 16000 //Auto closes after 1000ms/1sec
-        });
-    });
-})(jQuery);
