@@ -23,9 +23,23 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 35px;
+    margin: 0 0 20px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+h1.popup,
+h2.popup,
+h3.popup,
+h4.popup,
+h5.popup,
+h6.popup {
+    margin: 0 0 20px;
+    text-transform:capitalize;
+    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -390,4 +404,13 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+.popup-default {
+  background-color: transparent;
+}
+
+.modal-content {
+  position: relative;
+  background-color: black;
 }

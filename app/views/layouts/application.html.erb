@@ -50,7 +50,6 @@
                     <i class="fa fa-bars"></i>
                 </button>
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-main-collapse">
 
@@ -81,106 +80,11 @@
 
             </div>
             <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                  <p></p>
-                </div>
-              </div>
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading"><%= t('tagline') %></h1>
-                        <p class="intro-text"><%= t('tagline1') %><br><%= t('tagline2') %><br><%= t('tagline3') %></p>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
-                </div>
             </div>
-        </div>
-    </header>
+            <!-- /.container -->
+            </nav>
 
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2><%= t('about1') %></h2>
-                <p><%= t('about2') %><br><%= t('about3') %><br><%= t('about4') %></p>
-                <p><%= t('about5') %></p>
-              </div>
-        </div>
-    </section>
-
-    <!-- Download Section -->
-    <section id="download" class="content-section text-center" >
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2><%= t('download0') %></h2>
-                    <p class="text-left"><%= t('download1') %></p>
-
-                    <p class="text-justify"><%= t('download2') %></p>
-                    <p class="text-left"><%= t('download3') %></p>
-                    <p class="text-left"><%= t('download4') %>
-                    </p>
-                    <p class="text-left"><%= t('download5') %></p>
-                    <%= link_to "Download", "/download/MannaguddaGattyFoundation.doc" , class: "btn btn-default btn-lg text-center" %>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-
-                <h2><%= t('founder0') %></h2>
-                <p class="contact"><%= t('founder1') %></p>
-                <p class="contact"><%= t('founder2') %></p>
-                <p class="contact"><%= t('founder3') %></p>
-                <p class="contact"><%= t('founder4') %></p>
-                <p class="contact"><%= t('founder5') %></p>
-                <p class="contact"><%= t('founder6') %></p>
-                <h2><%= t('contact0') %></h2>
-                <p ><%= t('contact1') %></p>
-                <p><a href="mailto:contact@gattyfoundation.org">contact@gattyfoundation.org</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://www.facebook.com/profile.php?id=100008760936106" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/gattyfoundation" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/107909044151896556498" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Map Section -->
-    <div id="map"></div>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; <%= t('mannagudde') %> <%= t('gatty') %> <%= t('foundation') %></p>
-        </div>
-    </footer>
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<%= yield %>
 
 </body>
 
