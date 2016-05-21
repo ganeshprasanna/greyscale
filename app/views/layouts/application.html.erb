@@ -57,6 +57,7 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
+            <!-- Disable internationalization - Kannada 05/21/2016
                     <li>
                       <% if I18n.locale.to_s == 'en' %>
                         <%= link_to 'ಕನ್ನಡ', url_for( :locale => 'kn' ), :class => "#{ 'selected' if I18n.locale.to_s == 'kn' }",'data-no-turbolink' => true %>
@@ -64,6 +65,7 @@
                         <%= link_to 'ENGLISH', url_for( :locale => 'en' ), :class => "#{ 'selected' if I18n.locale.to_s == 'en' }",'data-no-turbolink' => true %>
                       <% end %>
                     </li>
+            -->
                     <li>
                         <a class="page-scroll" href="#about"><%= t('about') %></a>
                     </li>
