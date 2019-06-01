@@ -1,4 +1,4 @@
-/Users/GP/.rbenv/versions/2.2.2/bin/ruby -r ./siteconf20171118-2984-1gkgfsn.rb extconf.rb
+/Users/GP/.rbenv/versions/2.2.2/bin/ruby -r ./siteconf20190531-67284-3n9epw.rb extconf.rb
 creating Makefile
 
 make "DESTDIR=" clean
